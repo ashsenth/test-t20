@@ -47,7 +47,7 @@ const Pages = () => {
         }
       }
 
-      if (event.eventType === EventType.LOGIN_SUCCESS || event.eventType === EventType.ACQUIRE_TOKEN_SUCCESS) {
+      if (event.eventType === EventType.LOGIN_SUCCESS) {
         if (event?.payload) {
           /**
            * We need to reject id tokens that were not issued with the default sign-in policy.
